@@ -35,7 +35,7 @@ section.container-1 {
 .container-1 header.header-menu {
     grid-area: header;
     outline: 1px solid #000;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #35382e;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -44,8 +44,6 @@ section.container-1 {
     padding-top: 15px;
     padding-bottom: 15px;
     align-content: start;
-    padding-right: 50px;
-
 }
 
 .container-1 header.header-menu nav.navbar-1 ul li a {
@@ -83,7 +81,7 @@ section.container-1 {
 .container-1 header.header-menu nav.navbar-2 ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .container-1 header.header-menu nav {
@@ -93,12 +91,12 @@ section.container-1 {
 .container-1 main.main-menu .main-menu-content {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr;
-    grid-gap: 10x;
+    grid-gap: 5x;
     justify-content: center;
     background-color: #35382e;
     outline: 1px solid #000;
     border-radius: 5%;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .container-1 main.main-menu .main-menu-content h2 {
@@ -141,4 +139,92 @@ section.container-1 {
 .container-1 .icon a:hover {
     color: #f5cf04;
     transition: 0.5s;
+}
+
+
+
+
+
+
+section.container-2 {
+    background-color: #ede6e2;
+    display: grid;
+    grid-template:
+    "title" 0.1fr
+    "cards" 0.9fr /
+    1fr;
+    /* grid-template: 
+    "title title title" 0.1fr
+    "card-1 card-2 card-3" 0.9fr /
+    0.3fr 0.35fr 0.35fr;
+    /* grid-gap: 20px; */
+    place-items: center;
+    align-content: start; 
+    justify-content: center;
+    grid-gap: 25px;
+    /* height: 100vh; */
+}
+
+section.container-2 .cards {
+    grid-area: cards;
+    outline: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding-top: 10px;
+    place-items: center;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+section.container-2 .cards .card {
+    outline: 0.5px solid #000;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    width: 45ch;
+    /* padding: 20px 10px; */
+    grid-gap: 10px;
+    align-content: center;
+    padding: 10px 5px;
+    background-color: #f7f4f3;
+}
+
+section.container-2 .cards .card button {
+    background-color: #ea755b;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 10%;
+}
+
+section.container-2 .cards .card button a {
+    color: #ede6e2;
+}
+
+section.container-2 .title {
+    grid-area: title;
+    padding-top: 30px;
+}
+
+section.container-2 .title h3 {
+   font-family: sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+   color: #35382e;
+}
+
+section.container-2 .cards .card h4 {
+    color: #ea755b;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+section.container-2 .cards .card p {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
 }
