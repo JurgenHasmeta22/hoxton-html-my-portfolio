@@ -18,7 +18,8 @@ section.container-1 {
     display: grid;
     grid-template: 
     "header" auto
-    "main" 1fr /
+    "main" 1fr 
+    "icon" 0.1fr /
     1fr;
     grid-gap: 20px;
     justify-content: center;
@@ -28,7 +29,7 @@ section.container-1 {
 
 .container-1 main.main-menu {
     grid-area: main;
-    outline: 1px solid #000;
+    /* outline: 1px solid #000; */
 }
 
 .container-1 header.header-menu {
@@ -87,4 +88,57 @@ section.container-1 {
 
 .container-1 header.header-menu nav {
    outline: 1px solid #000;
+}
+
+.container-1 main.main-menu .main-menu-content {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-gap: 10x;
+    justify-content: center;
+    background-color: #35382e;
+    outline: 1px solid #000;
+    border-radius: 5%;
+    padding: 10px 10px;
+}
+
+.container-1 main.main-menu .main-menu-content h2 {
+    text-align: center;
+    color: #f5cf04;
+    letter-spacing: 2.5px;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+
+.container-1 main.main-menu .main-menu-content p {
+    color: #ece5e1;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 75ch;
+    padding-bottom: 10px;
+}
+
+.container-1 main.main-menu .main-menu-content p a {
+    color: #69d0fd;
+}
+
+.container-1 main.main-menu .main-menu-content p a:hover {
+    color: #f5cf04;
+    transition: 0.5s;
+}
+
+.container-1 .icon {
+    grid-area: icon;
+}
+
+.container-1 .icon a {
+    color: #ece5e1;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.container-1 .icon a:hover {
+    color: #f5cf04;
+    transition: 0.5s;
 }
