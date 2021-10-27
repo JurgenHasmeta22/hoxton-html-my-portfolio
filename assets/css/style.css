@@ -51,6 +51,7 @@ section.container-1 {
     align-content: start;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 3px;
 
     position: -webkit-sticky;
 	position: sticky;
@@ -103,29 +104,29 @@ section.container-1 {
 .container-1 main.main-menu .main-menu-content {
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr;
-    grid-gap: 5x;
+    grid-gap: 1x;
     justify-content: center;
     background-color: #35382e;
     outline: 1px solid #000;
-    border-radius: 15%;
+    border-radius: 5px;
     padding: 20px 20px;
 }
 
 .container-1 main.main-menu .main-menu-content h2 {
     text-align: center;
     color: #f5cf04;
-    letter-spacing: 2.5px;
-    font-size: 28px;
-    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 900;
     font-family: sans-serif;
 }
 
 .container-1 main.main-menu .main-menu-content p {
     color: #ece5e1;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     font-family: sans-serif;
-    width: 75ch;
+    width: 70ch;
     padding-bottom: 10px;
 }
 
@@ -198,8 +199,9 @@ section.container-2 .cards .card {
     /* padding: 20px 10px; */
     grid-gap: 10px;
     align-content: center;
-    padding: 10px 5px;
+    padding: 15px 5px;
     background-color: #f7f4f3;
+    border-radius: 20px;
 }
 
 section.container-2 .cards .card button {
@@ -208,7 +210,7 @@ section.container-2 .cards .card button {
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 600;
-    border-radius: 20%;
+    border-radius: 5px;
 }
 
 
