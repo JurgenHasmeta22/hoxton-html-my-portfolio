@@ -38,7 +38,7 @@ section.container-1 {
 
 .container-1 header.header-menu {
     grid-area: header;
-    outline: 1px solid #000;
+    border: 1px solid #000;
     margin-top: 20px;
     background-color: #35382e;
     display: grid;
@@ -51,11 +51,13 @@ section.container-1 {
     align-content: start;
     padding-left: 30px;
     padding-right: 30px;
-    border-radius: 3px;
+    border-radius: 15px;
 
-    position: -webkit-sticky;
-	position: sticky;
-    top: 0;
+    /* position: -webkit-sticky;
+	position: sticky; */
+    top: 5px;
+    z-index: 5;
+    position: fixed;
 }
 
 
@@ -108,7 +110,7 @@ section.container-1 {
     justify-content: center;
     background-color: #35382e;
     outline: 1px solid #000;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 20px 20px;
 }
 
@@ -192,14 +194,14 @@ section.container-2 .cards {
 }
 
 section.container-2 .cards .card {
-    outline: 0.5px solid #000;
+    border: 1px solid #000;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
      /*  width: 45ch; ketu ishte bug */
     /* padding: 20px 10px; */
     grid-gap: 10px;
     align-content: center;
-    padding: 15px 5px;
+    padding: 15px 10px;
     background-color: #f7f4f3;
     border-radius: 20px;
 }
@@ -210,7 +212,7 @@ section.container-2 .cards .card button {
     font-size: 16px;
     font-family: sans-serif;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 
@@ -293,7 +295,7 @@ section.container-3 .cards {
 }
 
 section.container-3 .cards .card {
-    outline: 0.5px solid #000;
+    border: 1px solid #000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* padding: 20px 10px; */
@@ -301,6 +303,7 @@ section.container-3 .cards .card {
     place-items: center;
     background-color: #ede6e2;
     padding: 15px 0px;
+    border-radius: 20px;
 }
 
 
